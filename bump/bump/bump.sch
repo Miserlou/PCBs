@@ -1,0 +1,570 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L synth_power_2x5:Synth_power_2x5 J1
+U 1 1 61246737
+P 1575 6750
+F 0 "J1" H 1575 7197 60  0000 C CNN
+F 1 "Synth_power_2x5" H 1575 7091 60  0000 C CNN
+F 2 "ao_tht:Power_Header" H 1575 6750 60  0001 C CNN
+F 3 "" H 1575 6750 60  0001 C CNN
+	1    1575 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 6124673D
+P 2925 7050
+F 0 "#PWR06" H 2925 6800 50  0001 C CNN
+F 1 "GND" H 2930 6877 50  0000 C CNN
+F 2 "" H 2925 7050 50  0001 C CNN
+F 3 "" H 2925 7050 50  0001 C CNN
+	1    2925 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 6650 2025 6750
+Connection ~ 2025 6750
+Wire Wire Line
+	2025 6750 2025 6850
+Wire Wire Line
+	1125 6650 1125 6750
+Connection ~ 1125 6750
+Wire Wire Line
+	1125 6750 1125 6850
+$Comp
+L power:GND #PWR01
+U 1 1 61246749
+P 850 6750
+F 0 "#PWR01" H 850 6500 50  0001 C CNN
+F 1 "GND" H 855 6577 50  0000 C CNN
+F 2 "" H 850 6750 50  0001 C CNN
+F 3 "" H 850 6750 50  0001 C CNN
+	1    850  6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 6550 2025 6425
+Wire Wire Line
+	2025 6425 2300 6425
+Wire Wire Line
+	2025 6950 2025 7225
+Wire Wire Line
+	2025 7300 2275 7300
+$Comp
+L Device:C_Polarized C2
+U 1 1 6124675F
+P 2625 7200
+F 0 "C2" H 2743 7246 50  0000 L CNN
+F 1 "10uf" H 2743 7155 50  0000 L CNN
+F 2 "ao_tht:CP_Radial_D5.0mm_P2.00mm" H 2663 7050 50  0001 C CNN
+F 3 "~" H 2625 7200 50  0001 C CNN
+	1    2625 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Polarized C1
+U 1 1 61246765
+P 2625 6525
+F 0 "C1" H 2743 6571 50  0000 L CNN
+F 1 "10uf" H 2743 6480 50  0000 L CNN
+F 2 "ao_tht:CP_Radial_D5.0mm_P2.00mm" H 2663 6375 50  0001 C CNN
+F 3 "~" H 2625 6525 50  0001 C CNN
+	1    2625 6525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2925 7050 2625 7050
+Wire Wire Line
+	2025 6425 2025 6175
+Wire Wire Line
+	1125 6175 1125 6550
+Connection ~ 2025 6425
+Wire Wire Line
+	1125 6950 1125 7225
+Connection ~ 2025 7225
+Wire Wire Line
+	2025 7225 2025 7300
+Wire Wire Line
+	1125 7225 1625 7225
+$Comp
+L power:GND #PWR04
+U 1 1 61246777
+P 2300 6750
+F 0 "#PWR04" H 2300 6500 50  0001 C CNN
+F 1 "GND" H 2305 6577 50  0000 C CNN
+F 2 "" H 2300 6750 50  0001 C CNN
+F 3 "" H 2300 6750 50  0001 C CNN
+	1    2300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 6750 2300 6750
+Wire Wire Line
+	1625 7200 1625 7225
+Connection ~ 1625 7225
+Wire Wire Line
+	1625 7225 2025 7225
+Wire Wire Line
+	850  6750 975  6750
+Wire Wire Line
+	975  6700 975  6750
+Connection ~ 975  6750
+Wire Wire Line
+	975  6750 1125 6750
+$Comp
+L power:GND #PWR05
+U 1 1 61246785
+P 2925 6750
+F 0 "#PWR05" H 2925 6500 50  0001 C CNN
+F 1 "GND" H 2930 6577 50  0000 C CNN
+F 2 "" H 2925 6750 50  0001 C CNN
+F 3 "" H 2925 6750 50  0001 C CNN
+	1    2925 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2925 6750 2625 6750
+Wire Wire Line
+	2625 6675 2625 6750
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 6124678D
+P 975 6700
+F 0 "#FLG01" H 975 6775 50  0001 C CNN
+F 1 "PWR_FLAG" H 975 6873 50  0000 C CNN
+F 2 "" H 975 6700 50  0001 C CNN
+F 3 "~" H 975 6700 50  0001 C CNN
+	1    975  6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 5 1 61246799
+P 3850 6775
+F 0 "U1" H 3808 6821 50  0000 L CNN
+F 1 "TL074" H 3808 6730 50  0000 L CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 3850 6775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3850 6775 50  0001 C CNN
+	5    3850 6775
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2_pin_molex_connector:2_pin_Molex_connector INPUT1
+U 1 1 6124679F
+P 1650 2425
+F 0 "INPUT1" H 1730 2417 50  0000 L CNN
+F 1 "Input" H 1730 2326 50  0000 L CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1650 2425 50  0001 C CNN
+F 3 "" H 1650 2425 50  0001 C CNN
+	1    1650 2425
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 612467AB
+P 2250 2575
+F 0 "R1" V 2043 2575 50  0000 C CNN
+F 1 "100K" V 2134 2575 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2180 2575 50  0001 C CNN
+F 3 "~" H 2250 2575 50  0001 C CNN
+	1    2250 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2425 1850 2425
+Wire Wire Line
+	2250 2425 2500 2425
+$Comp
+L power:GND #PWR02
+U 1 1 612467C7
+P 1850 2525
+F 0 "#PWR02" H 1850 2275 50  0001 C CNN
+F 1 "GND" H 1855 2352 50  0000 C CNN
+F 2 "" H 1850 2525 50  0001 C CNN
+F 3 "" H 1850 2525 50  0001 C CNN
+	1    1850 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 612467D6
+P 1375 4750
+F 0 "H1" H 1475 4796 50  0000 L CNN
+F 1 "MountingHole" H 1475 4705 50  0000 L CNN
+F 2 "ao_tht:MountingHole_3.2mm_M3" H 1375 4750 50  0001 C CNN
+F 3 "~" H 1375 4750 50  0001 C CNN
+	1    1375 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 612467E5
+P 3175 6575
+F 0 "C3" V 2923 6575 50  0000 C CNN
+F 1 "100nf" V 3014 6575 50  0000 C CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3213 6425 50  0001 C CNN
+F 3 "~" H 3175 6575 50  0001 C CNN
+	1    3175 6575
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 612467F1
+P 3175 6725
+F 0 "#PWR07" H 3175 6475 50  0001 C CNN
+F 1 "GND" H 3180 6552 50  0000 C CNN
+F 2 "" H 3175 6725 50  0001 C CNN
+F 3 "" H 3175 6725 50  0001 C CNN
+	1    3175 6725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 6175 2025 6175
+$Comp
+L power:GND #PWR03
+U 1 1 61257C5B
+P 2250 2725
+F 0 "#PWR03" H 2250 2475 50  0001 C CNN
+F 1 "GND" H 2255 2552 50  0000 C CNN
+F 2 "" H 2250 2725 50  0001 C CNN
+F 3 "" H 2250 2725 50  0001 C CNN
+	1    2250 2725
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 2425
+$Comp
+L Amplifier_Operational:TL074 U1
+U 1 1 61258D83
+P 2975 2525
+F 0 "U1" H 2975 2892 50  0000 C CNN
+F 1 "TL074" H 2975 2801 50  0000 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 2925 2625 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3025 2725 50  0001 C CNN
+	1    2975 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 2 1 6125F89C
+P 2975 3150
+F 0 "U1" H 2975 3517 50  0000 C CNN
+F 1 "TL074" H 2975 3426 50  0000 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 2925 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3025 3350 50  0001 C CNN
+	2    2975 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 3 1 6126232D
+P 2975 3775
+F 0 "U1" H 2975 4142 50  0000 C CNN
+F 1 "TL074" H 2975 4051 50  0000 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 2925 3875 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3025 3975 50  0001 C CNN
+	3    2975 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 4 1 61264260
+P 2975 4350
+F 0 "U1" H 2975 4717 50  0000 C CNN
+F 1 "TL074" H 2975 4626 50  0000 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 2925 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3025 4550 50  0001 C CNN
+	4    2975 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2425 2500 3050
+Wire Wire Line
+	2500 3050 2675 3050
+Connection ~ 2500 2425
+Wire Wire Line
+	2500 2425 2675 2425
+Wire Wire Line
+	2500 3050 2500 3675
+Wire Wire Line
+	2500 3675 2675 3675
+Connection ~ 2500 3050
+Wire Wire Line
+	2500 3675 2500 4250
+Wire Wire Line
+	2500 4250 2675 4250
+Connection ~ 2500 3675
+Wire Wire Line
+	3275 2525 3375 2525
+Wire Wire Line
+	3275 3150 3375 3150
+Wire Wire Line
+	3275 3775 3375 3775
+Wire Wire Line
+	3275 4350 3375 4350
+Wire Wire Line
+	3375 2525 3375 2775
+Wire Wire Line
+	3375 2775 2675 2775
+Wire Wire Line
+	2675 2775 2675 2625
+Connection ~ 3375 2525
+Wire Wire Line
+	3375 2525 3500 2525
+Wire Wire Line
+	3375 3150 3375 3400
+Wire Wire Line
+	3375 3400 2675 3400
+Wire Wire Line
+	2675 3400 2675 3250
+Connection ~ 3375 3150
+Wire Wire Line
+	3375 3150 3500 3150
+Wire Wire Line
+	3375 3775 3375 4025
+Wire Wire Line
+	3375 4025 2675 4025
+Wire Wire Line
+	2675 4025 2675 3875
+Connection ~ 3375 3775
+Wire Wire Line
+	3375 3775 3500 3775
+Wire Wire Line
+	3375 4350 3375 4600
+Wire Wire Line
+	3375 4600 2675 4600
+Wire Wire Line
+	2675 4600 2675 4450
+Connection ~ 3375 4350
+Wire Wire Line
+	3375 4350 3500 4350
+$Comp
+L Device:R R2
+U 1 1 6126F310
+P 3650 2525
+F 0 "R2" V 3443 2525 50  0000 C CNN
+F 1 "1K" V 3534 2525 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3580 2525 50  0001 C CNN
+F 3 "~" H 3650 2525 50  0001 C CNN
+	1    3650 2525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61273FAE
+P 3650 3150
+F 0 "R3" V 3443 3150 50  0000 C CNN
+F 1 "1K" V 3534 3150 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3580 3150 50  0001 C CNN
+F 3 "~" H 3650 3150 50  0001 C CNN
+	1    3650 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61275036
+P 3650 3775
+F 0 "R4" V 3443 3775 50  0000 C CNN
+F 1 "1K" V 3534 3775 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3580 3775 50  0001 C CNN
+F 3 "~" H 3650 3775 50  0001 C CNN
+	1    3650 3775
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6127628C
+P 3650 4350
+F 0 "R5" V 3443 4350 50  0000 C CNN
+F 1 "1K" V 3534 4350 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3580 4350 50  0001 C CNN
+F 3 "~" H 3650 4350 50  0001 C CNN
+	1    3650 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 2_pin_molex_connector:2_pin_Molex_connector OUTPUT1
+U 1 1 61278570
+P 4200 2525
+F 0 "OUTPUT1" H 4280 2517 50  0000 L CNN
+F 1 "Output" H 4280 2426 50  0000 L CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4200 2525 50  0001 C CNN
+F 3 "" H 4200 2525 50  0001 C CNN
+	1    4200 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 61278576
+P 4000 2625
+F 0 "#PWR09" H 4000 2375 50  0001 C CNN
+F 1 "GND" H 4005 2452 50  0000 C CNN
+F 2 "" H 4000 2625 50  0001 C CNN
+F 3 "" H 4000 2625 50  0001 C CNN
+	1    4000 2625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2525 3800 2525
+$Comp
+L 2_pin_molex_connector:2_pin_Molex_connector OUTPUT2
+U 1 1 6127E102
+P 4200 3150
+F 0 "OUTPUT2" H 4280 3142 50  0000 L CNN
+F 1 "Output" H 4280 3051 50  0000 L CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0001 C CNN
+	1    4200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 6127E108
+P 4000 3250
+F 0 "#PWR010" H 4000 3000 50  0001 C CNN
+F 1 "GND" H 4005 3077 50  0000 C CNN
+F 2 "" H 4000 3250 50  0001 C CNN
+F 3 "" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3150 3800 3150
+$Comp
+L 2_pin_molex_connector:2_pin_Molex_connector OUTPUT3
+U 1 1 6127F639
+P 4200 3775
+F 0 "OUTPUT3" H 4280 3767 50  0000 L CNN
+F 1 "Output" H 4280 3676 50  0000 L CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4200 3775 50  0001 C CNN
+F 3 "" H 4200 3775 50  0001 C CNN
+	1    4200 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 6127F63F
+P 4000 3875
+F 0 "#PWR011" H 4000 3625 50  0001 C CNN
+F 1 "GND" H 4005 3702 50  0000 C CNN
+F 2 "" H 4000 3875 50  0001 C CNN
+F 3 "" H 4000 3875 50  0001 C CNN
+	1    4000 3875
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3775 3800 3775
+$Comp
+L 2_pin_molex_connector:2_pin_Molex_connector OUTPUT4
+U 1 1 61281269
+P 4200 4350
+F 0 "OUTPUT4" H 4280 4342 50  0000 L CNN
+F 1 "Output" H 4280 4251 50  0000 L CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4200 4350 50  0001 C CNN
+F 3 "" H 4200 4350 50  0001 C CNN
+	1    4200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 6128126F
+P 4000 4450
+F 0 "#PWR012" H 4000 4200 50  0001 C CNN
+F 1 "GND" H 4005 4277 50  0000 C CNN
+F 2 "" H 4000 4450 50  0001 C CNN
+F 3 "" H 4000 4450 50  0001 C CNN
+	1    4000 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4350 3800 4350
+Wire Wire Line
+	2625 6375 2300 6375
+Wire Wire Line
+	2300 6375 2300 6425
+Wire Wire Line
+	2625 7350 2275 7350
+Wire Wire Line
+	2275 7350 2275 7300
+$Comp
+L Device:C C4
+U 1 1 612C0C66
+P 3175 7325
+F 0 "C4" V 2923 7325 50  0000 C CNN
+F 1 "100nf" V 3014 7325 50  0000 C CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3213 7175 50  0001 C CNN
+F 3 "~" H 3175 7325 50  0001 C CNN
+	1    3175 7325
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 612C0C6C
+P 3175 7175
+F 0 "#PWR08" H 3175 6925 50  0001 C CNN
+F 1 "GND" H 3180 7002 50  0000 C CNN
+F 2 "" H 3175 7175 50  0001 C CNN
+F 3 "" H 3175 7175 50  0001 C CNN
+	1    3175 7175
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3175 6425 3175 6375
+Wire Wire Line
+	3175 6375 2625 6375
+Connection ~ 2625 6375
+Wire Wire Line
+	3750 6475 3750 6375
+Wire Wire Line
+	3750 6375 3175 6375
+Connection ~ 3175 6375
+Wire Wire Line
+	3750 7050 3750 7075
+Wire Wire Line
+	3750 7475 3175 7475
+Connection ~ 3750 7075
+Wire Wire Line
+	3750 7075 3750 7475
+Wire Wire Line
+	3175 7475 2625 7475
+Wire Wire Line
+	2625 7475 2625 7350
+Connection ~ 3175 7475
+Connection ~ 2625 7350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 612CFFD3
+P 3750 6475
+F 0 "#FLG0101" H 3750 6550 50  0001 C CNN
+F 1 "PWR_FLAG" H 3750 6648 50  0000 C CNN
+F 2 "" H 3750 6475 50  0001 C CNN
+F 3 "~" H 3750 6475 50  0001 C CNN
+	1    3750 6475
+	0    1    1    0   
+$EndComp
+Connection ~ 3750 6475
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 612D47A3
+P 3750 7075
+F 0 "#FLG0102" H 3750 7150 50  0001 C CNN
+F 1 "PWR_FLAG" H 3750 7248 50  0000 C CNN
+F 2 "" H 3750 7075 50  0001 C CNN
+F 3 "~" H 3750 7075 50  0001 C CNN
+	1    3750 7075
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

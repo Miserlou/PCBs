@@ -1,0 +1,253 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:TL074 U?
+U 1 1 60DC7EF4
+P 4350 2250
+F 0 "U?" H 4350 2617 50  0000 C CNN
+F 1 "TL074" H 4350 2526 50  0000 C CNN
+F 2 "" H 4300 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4400 2450 50  0001 C CNN
+	1    4350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 2 1 60DCA0AF
+P 4350 2975
+F 0 "U?" H 4350 3342 50  0000 C CNN
+F 1 "TL074" H 4350 3251 50  0000 C CNN
+F 2 "" H 4300 3075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4400 3175 50  0001 C CNN
+	2    4350 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 3 1 60DCBEFC
+P 4325 3675
+F 0 "U?" H 4325 4042 50  0000 C CNN
+F 1 "TL074" H 4325 3951 50  0000 C CNN
+F 2 "" H 4275 3775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4375 3875 50  0001 C CNN
+	3    4325 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 4 1 60DCEAE8
+P 4325 4300
+F 0 "U?" H 4325 4667 50  0000 C CNN
+F 1 "TL074" H 4325 4576 50  0000 C CNN
+F 2 "" H 4275 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4375 4500 50  0001 C CNN
+	4    4325 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 5 1 60DD1791
+P 2625 4875
+F 0 "U?" H 2583 4921 50  0000 L CNN
+F 1 "TL074" H 2583 4830 50  0000 L CNN
+F 2 "" H 2575 4975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2675 5075 50  0001 C CNN
+	5    2625 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 60DD85EE
+P 2200 2225
+F 0 "J?" H 2232 2550 50  0000 C CNN
+F 1 "AudioJack2" H 2232 2459 50  0000 C CNN
+F 2 "" H 2200 2225 50  0001 C CNN
+F 3 "~" H 2200 2225 50  0001 C CNN
+	1    2200 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60DDA260
+P 2975 2425
+F 0 "R?" H 3045 2471 50  0000 L CNN
+F 1 "100K" H 3045 2380 50  0000 L CNN
+F 2 "" V 2905 2425 50  0001 C CNN
+F 3 "~" H 2975 2425 50  0001 C CNN
+	1    2975 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DDC961
+P 2625 1775
+F 0 "#PWR?" H 2625 1525 50  0001 C CNN
+F 1 "GND" H 2630 1602 50  0000 C CNN
+F 2 "" H 2625 1775 50  0001 C CNN
+F 3 "" H 2625 1775 50  0001 C CNN
+	1    2625 1775
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DDE5F4
+P 2975 2725
+F 0 "#PWR?" H 2975 2475 50  0001 C CNN
+F 1 "GND" H 2980 2552 50  0000 C CNN
+F 2 "" H 2975 2725 50  0001 C CNN
+F 3 "" H 2975 2725 50  0001 C CNN
+	1    2975 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60DDF137
+P 5425 2250
+F 0 "R?" V 5632 2250 50  0000 C CNN
+F 1 "1K" V 5541 2250 50  0000 C CNN
+F 2 "" V 5355 2250 50  0001 C CNN
+F 3 "~" H 5425 2250 50  0001 C CNN
+	1    5425 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60DE0A37
+P 5425 2975
+F 0 "R?" V 5632 2975 50  0000 C CNN
+F 1 "1K" V 5541 2975 50  0000 C CNN
+F 2 "" V 5355 2975 50  0001 C CNN
+F 3 "~" H 5425 2975 50  0001 C CNN
+	1    5425 2975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60DE185A
+P 5425 3700
+F 0 "R?" V 5632 3700 50  0000 C CNN
+F 1 "1K" V 5541 3700 50  0000 C CNN
+F 2 "" V 5355 3700 50  0001 C CNN
+F 3 "~" H 5425 3700 50  0001 C CNN
+	1    5425 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60DE1F77
+P 5400 4325
+F 0 "R?" V 5607 4325 50  0000 C CNN
+F 1 "1K" V 5516 4325 50  0000 C CNN
+F 2 "" V 5330 4325 50  0001 C CNN
+F 3 "~" H 5400 4325 50  0001 C CNN
+	1    5400 4325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 60DE39D5
+P 6650 2225
+F 0 "J?" H 6470 2300 50  0000 R CNN
+F 1 "AudioJack2" H 6470 2209 50  0000 R CNN
+F 2 "" H 6650 2225 50  0001 C CNN
+F 3 "~" H 6650 2225 50  0001 C CNN
+	1    6650 2225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 60DE62B9
+P 6650 3025
+F 0 "J?" H 6470 3100 50  0000 R CNN
+F 1 "AudioJack2" H 6470 3009 50  0000 R CNN
+F 2 "" H 6650 3025 50  0001 C CNN
+F 3 "~" H 6650 3025 50  0001 C CNN
+	1    6650 3025
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 60DE6B9C
+P 6625 3750
+F 0 "J?" H 6445 3825 50  0000 R CNN
+F 1 "AudioJack2" H 6445 3734 50  0000 R CNN
+F 2 "" H 6625 3750 50  0001 C CNN
+F 3 "~" H 6625 3750 50  0001 C CNN
+	1    6625 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 60DE71A6
+P 6625 4400
+F 0 "J?" H 6445 4475 50  0000 R CNN
+F 1 "AudioJack2" H 6445 4384 50  0000 R CNN
+F 2 "" H 6625 4400 50  0001 C CNN
+F 3 "~" H 6625 4400 50  0001 C CNN
+	1    6625 4400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2125 2625 2125
+Wire Wire Line
+	2625 2125 2625 1775
+Wire Wire Line
+	2400 2225 2975 2225
+Wire Wire Line
+	2975 2225 2975 2275
+Wire Wire Line
+	2975 2575 2975 2725
+Connection ~ 2975 2725
+Wire Wire Line
+	2975 2725 2975 2750
+Wire Wire Line
+	2975 2225 3275 2225
+Wire Wire Line
+	3275 2225 3275 2150
+Wire Wire Line
+	3275 2150 3500 2150
+Wire Wire Line
+	3500 2150 3500 4525
+Connection ~ 2975 2225
+Wire Wire Line
+	5275 2250 4650 2250
+Wire Wire Line
+	5575 2250 6450 2250
+Wire Wire Line
+	6450 2250 6450 2225
+Wire Wire Line
+	6450 3025 5575 3025
+Wire Wire Line
+	5575 3025 5575 2975
+Wire Wire Line
+	5275 2975 4650 2975
+Wire Wire Line
+	4625 3675 5275 3675
+Wire Wire Line
+	5275 3675 5275 3700
+Wire Wire Line
+	5575 3700 6425 3700
+Wire Wire Line
+	6425 3700 6425 3750
+Wire Wire Line
+	6425 4400 5550 4400
+Wire Wire Line
+	5550 4400 5550 4325
+Wire Wire Line
+	5250 4325 4625 4325
+Wire Wire Line
+	4625 4325 4625 4300
+$EndSCHEMATC
