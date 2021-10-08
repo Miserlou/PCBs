@@ -110,7 +110,7 @@ U 1 1 613AE471
 P 7200 4400
 F 0 "C8" V 6948 4400 50  0000 C CNN
 F 1 "100nf" V 7039 4400 50  0000 C CNN
-F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7238 4250 50  0001 C CNN
+F 2 "ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7238 4250 50  0001 C CNN
 F 3 "~" H 7200 4400 50  0001 C CNN
 	1    7200 4400
 	0    1    1    0   
@@ -121,7 +121,7 @@ U 1 1 613AE477
 P 7200 5200
 F 0 "C9" V 6948 5200 50  0000 C CNN
 F 1 "100nf" V 7039 5200 50  0000 C CNN
-F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7238 5050 50  0001 C CNN
+F 2 "ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7238 5050 50  0001 C CNN
 F 3 "~" H 7200 5200 50  0001 C CNN
 	1    7200 5200
 	0    1    1    0   
@@ -486,11 +486,9 @@ $EndComp
 Wire Wire Line
 	2325 2050 2250 2050
 Wire Wire Line
-	2225 950  2675 950 
-Wire Wire Line
 	2625 1150 2675 1150
 Wire Wire Line
-	2150 1850 2675 1850
+	2150 1850 2275 1850
 Wire Wire Line
 	2625 2050 2675 2050
 $Comp
@@ -602,10 +600,10 @@ F 3 "~" H 1725 3125 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R7
+L Device:R R21
 U 1 1 616EB4A4
 P 1050 3400
-F 0 "R7" V 843 3400 50  0000 C CNN
+F 0 "R21" V 843 3400 50  0000 C CNN
 F 1 "150K" V 934 3400 50  0000 C CNN
 F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 980 3400 50  0001 C CNN
 F 3 "~" H 1050 3400 50  0001 C CNN
@@ -654,7 +652,7 @@ U 1 1 6174132A
 P 2475 3450
 F 0 "C1" V 2223 3450 50  0000 C CNN
 F 1 "4.7uf" V 2314 3450 50  0000 C CNN
-F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2513 3300 50  0001 C CNN
+F 2 "ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 2513 3300 50  0001 C CNN
 F 3 "~" H 2475 3450 50  0001 C CNN
 	1    2475 3450
 	0    1    1    0   
@@ -747,16 +745,14 @@ F 3 "" H 1550 4475 50  0001 C CNN
 	1    1550 4475
 	1    0    0    -1  
 $EndComp
-Text GLabel 3250 3800 2    50   Input ~ 0
+Text GLabel 3425 3975 2    50   Input ~ 0
 X
 Wire Notes Line
-	3425 2800 3425 4825
+	3750 2800 3750 4825
 Wire Notes Line
 	500  4825 500  2800
 Text Notes 525  4800 0    50   ~ 0
-LFO
-Wire Notes Line
-	3425 2800 500  2800
+LFO / CV In
 $Comp
 L Device:R_Potentiometer Cutoff1
 U 1 1 618A5DCD
@@ -770,8 +766,6 @@ F 3 "~" H 875 5250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	875  5400 875  5475
-Wire Notes Line
-	500  4825 3425 4825
 $Comp
 L power:GND #PWR04
 U 1 1 618F7B03
@@ -853,12 +847,12 @@ F 3 "~" H 4400 1825 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C2
+L Device:C C7
 U 1 1 61A3C4B6
 P 4800 1825
-F 0 "C2" V 4548 1825 50  0000 C CNN
+F 0 "C7" V 4548 1825 50  0000 C CNN
 F 1 ".01uf" V 4639 1825 50  0000 C CNN
-F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4838 1675 50  0001 C CNN
+F 2 "ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 4838 1675 50  0001 C CNN
 F 3 "~" H 4800 1825 50  0001 C CNN
 	1    4800 1825
 	0    1    1    0   
@@ -952,17 +946,6 @@ F 3 "~" H 6100 1875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R21
-U 1 1 61B558B7
-P 6100 2375
-F 0 "R21" V 5893 2375 50  0000 C CNN
-F 1 "47K" V 5984 2375 50  0000 C CNN
-F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6030 2375 50  0001 C CNN
-F 3 "~" H 6100 2375 50  0001 C CNN
-	1    6100 2375
-	1    0    0    -1  
-$EndComp
-$Comp
 L pspice:INDUCTOR L1
 U 1 1 61B660BA
 P 5700 2675
@@ -981,8 +964,6 @@ Wire Wire Line
 	6100 1600 6100 1725
 Wire Wire Line
 	6100 2025 6100 2150
-Wire Wire Line
-	6100 2525 6100 3075
 Connection ~ 6100 3075
 Wire Wire Line
 	6100 3075 6675 3075
@@ -1032,7 +1013,7 @@ U 1 1 61BF1AE5
 P 6300 2525
 F 0 "C5" V 6048 2525 50  0000 C CNN
 F 1 "4.7uf" V 6139 2525 50  0000 C CNN
-F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6338 2375 50  0001 C CNN
+F 2 "ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6338 2375 50  0001 C CNN
 F 3 "~" H 6300 2525 50  0001 C CNN
 	1    6300 2525
 	-1   0    0    1   
@@ -1072,7 +1053,7 @@ U 1 1 61C6F1F4
 P 6475 1600
 F 0 "C6" V 6223 1600 50  0000 C CNN
 F 1 ".22uf" V 6314 1600 50  0000 C CNN
-F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6513 1450 50  0001 C CNN
+F 2 "ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6513 1450 50  0001 C CNN
 F 3 "~" H 6475 1600 50  0001 C CNN
 	1    6475 1600
 	0    1    1    0   
@@ -1094,7 +1075,7 @@ U 1 1 61D23768
 P 7300 1600
 F 0 "C10" V 7048 1600 50  0000 C CNN
 F 1 ".22uf" V 7139 1600 50  0000 C CNN
-F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7338 1450 50  0001 C CNN
+F 2 "ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7338 1450 50  0001 C CNN
 F 3 "~" H 7300 1600 50  0001 C CNN
 	1    7300 1600
 	0    1    1    0   
@@ -1122,12 +1103,12 @@ Connection ~ 7525 1600
 Wire Wire Line
 	7525 1600 7450 1600
 $Comp
-L Device:C C7
+L Device:C C2
 U 1 1 61DAAE84
 P 6825 3075
-F 0 "C7" V 6573 3075 50  0000 C CNN
-F 1 ".033uf" V 6664 3075 50  0000 C CNN
-F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6863 2925 50  0001 C CNN
+F 0 "C2" V 6573 3075 50  0000 C CNN
+F 1 ".033uf USE SOCKETS!" V 6664 3075 50  0000 C CNN
+F 2 "ao_tht:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6863 2925 50  0001 C CNN
 F 3 "~" H 6825 3075 50  0001 C CNN
 	1    6825 3075
 	0    1    1    0   
@@ -1317,23 +1298,12 @@ Wire Wire Line
 	6575 4250 6175 4250
 Text GLabel 6450 3925 0    50   Input ~ 0
 +12V
-$Comp
-L Device:R R24
-U 1 1 621820EA
-P 6725 3925
-F 0 "R24" V 6518 3925 50  0000 C CNN
-F 1 "10K" V 6609 3925 50  0000 C CNN
-F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6655 3925 50  0001 C CNN
-F 3 "~" H 6725 3925 50  0001 C CNN
-	1    6725 3925
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6875 3925 7000 3925
 Wire Wire Line
 	7000 3925 7000 3575
 Text GLabel 7000 3575 0    50   Input ~ 0
-B
+A
 $Comp
 L power:GND #PWR018
 U 1 1 6219965D
@@ -1361,23 +1331,12 @@ Wire Wire Line
 Connection ~ 7000 3925
 Wire Wire Line
 	6600 5700 6550 5700
-$Comp
-L Device:R R25
-U 1 1 621BA4E5
-P 6750 5700
-F 0 "R25" V 6543 5700 50  0000 C CNN
-F 1 "10K" V 6634 5700 50  0000 C CNN
-F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6680 5700 50  0001 C CNN
-F 3 "~" H 6750 5700 50  0001 C CNN
-	1    6750 5700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6900 5700 7025 5700
 Wire Wire Line
 	7025 5700 7025 5350
 Text GLabel 7025 5350 0    50   Input ~ 0
-A
+B
 $Comp
 L power:GND #PWR021
 U 1 1 621BA4EE
@@ -1410,9 +1369,6 @@ Wire Wire Line
 	6550 5275 6150 5275
 Wire Wire Line
 	6550 5275 6550 5700
-Connection ~ 6575 3925
-Wire Notes Line
-	3775 5975 8500 5975
 Wire Notes Line
 	8500 5975 8500 3375
 Wire Notes Line
@@ -1430,12 +1386,12 @@ Wire Wire Line
 $Comp
 L 3_pin_molex_connector:3_pin_Molex_connector J4
 U 1 1 622A205C
-P 2100 4500
-F 0 "J4" H 2018 4817 50  0000 C CNN
-F 1 "CV_switched_jack" H 2018 4726 50  0000 C CNN
-F 2 "ao_tht:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 2100 4500 50  0001 C CNN
-F 3 "~" H 2100 4500 50  0001 C CNN
-	1    2100 4500
+P 2100 4600
+F 0 "J4" H 2018 4917 50  0000 C CNN
+F 1 "CV_switched_jack" H 2018 4826 50  0000 C CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 2100 4600 50  0001 C CNN
+F 3 "~" H 2100 4600 50  0001 C CNN
+	1    2100 4600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1457,20 +1413,16 @@ Connection ~ 3075 3800
 Wire Wire Line
 	2300 4500 2550 4500
 Wire Wire Line
-	2850 4500 3175 4500
-Wire Wire Line
-	3175 4500 3175 3800
-Wire Wire Line
-	3175 3800 3250 3800
+	3350 3975 3375 3975
 $Comp
 L power:GND #PWR0101
 U 1 1 622E4CD2
-P 2300 4400
-F 0 "#PWR0101" H 2300 4150 50  0001 C CNN
-F 1 "GND" V 2305 4272 50  0000 R CNN
-F 2 "" H 2300 4400 50  0001 C CNN
-F 3 "" H 2300 4400 50  0001 C CNN
-	1    2300 4400
+P 2300 4700
+F 0 "#PWR0101" H 2300 4450 50  0001 C CNN
+F 1 "GND" V 2305 4572 50  0000 R CNN
+F 2 "" H 2300 4700 50  0001 C CNN
+F 3 "" H 2300 4700 50  0001 C CNN
+	1    2300 4700
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1487,4 +1439,174 @@ $EndComp
 Connection ~ 5550 4675
 Wire Wire Line
 	5550 4675 5675 4675
+$Comp
+L Device:R_Potentiometer TrimNeg1
+U 1 1 613B28FC
+P 6750 5700
+F 0 "TrimNeg1" V 6635 5700 50  0000 C CNN
+F 1 "20K" V 6544 5700 50  0000 C CNN
+F 2 "ao_tht:Potentiometer_Bourns_3296W_Vertical" H 6750 5700 50  0001 C CNN
+F 3 "~" H 6750 5700 50  0001 C CNN
+	1    6750 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 5550 6600 5550
+Wire Wire Line
+	6600 5550 6600 5700
+Connection ~ 6600 5700
+$Comp
+L Device:R_Potentiometer Trimpos1
+U 1 1 613E9475
+P 6725 3925
+F 0 "Trimpos1" V 6610 3925 50  0000 C CNN
+F 1 "20K" V 6519 3925 50  0000 C CNN
+F 2 "ao_tht:Potentiometer_Bourns_3296W_Vertical" H 6725 3925 50  0001 C CNN
+F 3 "~" H 6725 3925 50  0001 C CNN
+	1    6725 3925
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6725 3775 6575 3775
+Wire Wire Line
+	6575 3775 6575 3925
+Connection ~ 6575 3925
+Wire Notes Line
+	3775 5975 8500 5975
+$Comp
+L Device:LED D4
+U 1 1 61432ED1
+P 3375 3675
+F 0 "D4" V 3322 3755 50  0000 L CNN
+F 1 "LED" V 3413 3755 50  0000 L CNN
+F 2 "ao_tht:LED_D5.0mm" H 3375 3675 50  0001 C CNN
+F 3 "~" H 3375 3675 50  0001 C CNN
+	1    3375 3675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 61436251
+P 3375 3325
+F 0 "R24" V 3168 3325 50  0000 C CNN
+F 1 "1K" V 3259 3325 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3305 3325 50  0001 C CNN
+F 3 "~" H 3375 3325 50  0001 C CNN
+	1    3375 3325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3375 3825 3375 3975
+Connection ~ 3375 3975
+Wire Wire Line
+	3375 3975 3425 3975
+Wire Wire Line
+	3375 3525 3375 3475
+$Comp
+L power:GND #PWR0102
+U 1 1 6145B82A
+P 3375 3125
+F 0 "#PWR0102" H 3375 2875 50  0001 C CNN
+F 1 "GND" H 3380 2952 50  0000 C CNN
+F 2 "" H 3375 3125 50  0001 C CNN
+F 3 "" H 3375 3125 50  0001 C CNN
+	1    3375 3125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3375 3125 3375 3175
+Wire Wire Line
+	6100 2525 6100 2550
+$Comp
+L Device:R_Potentiometer Q3
+U 1 1 614D4283
+P 6100 2375
+F 0 "Q3" H 6031 2329 50  0000 R CNN
+F 1 "100K" H 6031 2420 50  0000 R CNN
+F 2 "ao_tht:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles_centered" H 6100 2375 50  0001 C CNN
+F 3 "~" H 6100 2375 50  0001 C CNN
+	1    6100 2375
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6250 2375 6250 2425
+Wire Wire Line
+	6250 2425 6175 2425
+Wire Wire Line
+	6175 2425 6175 2550
+Wire Wire Line
+	6175 2550 6100 2550
+Connection ~ 6100 2550
+Wire Wire Line
+	6100 2550 6100 3075
+Text Notes 600  6625 0    50   ~ 0
+TODO: Is vactrol backwrds
+$Comp
+L Device:R_Potentiometer ATTN1
+U 1 1 6160F254
+P 3475 4350
+F 0 "ATTN1" H 3406 4304 50  0000 R CNN
+F 1 "100K" H 3406 4395 50  0000 R CNN
+F 2 "ao_tht:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles_centered" H 3475 4350 50  0001 C CNN
+F 3 "~" H 3475 4350 50  0001 C CNN
+	1    3475 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 4200 3375 4200
+Wire Wire Line
+	3375 4200 3375 3975
+$Comp
+L power:GND #PWR011
+U 1 1 6168D538
+P 3475 4500
+F 0 "#PWR011" H 3475 4250 50  0001 C CNN
+F 1 "GND" H 3480 4327 50  0000 C CNN
+F 2 "" H 3475 4500 50  0001 C CNN
+F 3 "" H 3475 4500 50  0001 C CNN
+	1    3475 4500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  4825 3750 4825
+Wire Notes Line
+	3425 2800 500  2800
+Wire Wire Line
+	3325 4500 3325 4350
+Wire Wire Line
+	2225 950  2275 950 
+$Comp
+L Connector:TestPoint TP1
+U 1 1 614920CB
+P 2275 1700
+F 0 "TP1" H 2333 1818 50  0000 L CNN
+F 1 "TestPoint" H 2333 1727 50  0000 L CNN
+F 2 "ao_tht:Perf_Board_Hole" H 2475 1700 50  0001 C CNN
+F 3 "~" H 2475 1700 50  0001 C CNN
+	1    2275 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61720863
+P 2275 775
+F 0 "TP2" H 2333 893 50  0000 L CNN
+F 1 "TestPoint" H 2333 802 50  0000 L CNN
+F 2 "ao_tht:Perf_Board_Hole" H 2475 775 50  0001 C CNN
+F 3 "~" H 2475 775 50  0001 C CNN
+	1    2275 775 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4500 3325 4500
+Wire Wire Line
+	2275 775  2275 950 
+Connection ~ 2275 950 
+Wire Wire Line
+	2275 950  2675 950 
+Wire Wire Line
+	2275 1700 2275 1850
+Connection ~ 2275 1850
+Wire Wire Line
+	2275 1850 2675 1850
 $EndSCHEMATC
