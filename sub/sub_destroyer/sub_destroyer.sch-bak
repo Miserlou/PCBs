@@ -1,0 +1,566 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 2_pin_molex_connector:2_pin_Molex_connector J?
+U 1 1 6168B575
+P 825 975
+F 0 "J?" H 743 1192 50  0000 C CNN
+F 1 "INPUT" H 743 1101 50  0000 C CNN
+F 2 "" H 825 975 50  0001 C CNN
+F 3 "" H 825 975 50  0001 C CNN
+	1    825  975 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4013 U?
+U 1 1 6168C321
+P 3900 2500
+F 0 "U?" H 3900 2981 50  0000 C CNN
+F 1 "CD4013" H 3900 2890 50  0000 C CNN
+F 2 "" H 3900 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3900 2500 50  0001 C CNN
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4013 U?
+U 2 1 6168ED0E
+P 3900 1350
+F 0 "U?" H 3900 1831 50  0000 C CNN
+F 1 "CD4013" H 3900 1740 50  0000 C CNN
+F 2 "" H 3900 1350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3900 1350 50  0001 C CNN
+	2    3900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4013 U?
+U 3 1 61690B01
+P 5475 6825
+F 0 "U?" H 5705 6871 50  0000 L CNN
+F 1 "TL074" H 5705 6780 50  0000 L CNN
+F 2 "" H 5475 6825 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5475 6825 50  0001 C CNN
+	3    5475 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 616912DF
+P 2275 975
+F 0 "Q?" H 2465 1021 50  0000 L CNN
+F 1 "2N3904" H 2465 930 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2475 900 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 2275 975 50  0001 L CNN
+	1    2275 975 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 1 1 61691BA0
+P 6175 1100
+F 0 "U?" H 6175 733 50  0000 C CNN
+F 1 "TL074" H 6175 824 50  0000 C CNN
+F 2 "" H 6125 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6225 1300 50  0001 C CNN
+	1    6175 1100
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 2 1 61697771
+P 6175 1925
+F 0 "U?" H 6175 1558 50  0000 C CNN
+F 1 "TL074" H 6175 1649 50  0000 C CNN
+F 2 "" H 6125 2025 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6225 2125 50  0001 C CNN
+	2    6175 1925
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 3 1 61698947
+P 6175 2625
+F 0 "U?" H 6175 2258 50  0000 C CNN
+F 1 "TL074" H 6175 2349 50  0000 C CNN
+F 2 "" H 6125 2725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6225 2825 50  0001 C CNN
+	3    6175 2625
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 4 1 6169A250
+P 6175 3775
+F 0 "U?" H 6175 3408 50  0000 C CNN
+F 1 "TL074" H 6175 3499 50  0000 C CNN
+F 2 "" H 6125 3875 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6225 3975 50  0001 C CNN
+	4    6175 3775
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U?
+U 5 1 6169B660
+P 5100 6800
+F 0 "U?" H 4913 6754 50  0000 R CNN
+F 1 "TL074" H 4913 6845 50  0000 R CNN
+F 2 "" H 5050 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5150 7000 50  0001 C CNN
+	5    5100 6800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616AC47B
+P 3900 2200
+F 0 "#PWR?" H 3900 1950 50  0001 C CNN
+F 1 "GND" H 3905 2027 50  0000 C CNN
+F 2 "" H 3900 2200 50  0001 C CNN
+F 3 "" H 3900 2200 50  0001 C CNN
+	1    3900 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616ACA7C
+P 3900 1650
+F 0 "#PWR?" H 3900 1400 50  0001 C CNN
+F 1 "GND" H 3905 1477 50  0000 C CNN
+F 2 "" H 3900 1650 50  0001 C CNN
+F 3 "" H 3900 1650 50  0001 C CNN
+	1    3900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616AD05D
+P 3900 2800
+F 0 "#PWR?" H 3900 2550 50  0001 C CNN
+F 1 "GND" H 3905 2627 50  0000 C CNN
+F 2 "" H 3900 2800 50  0001 C CNN
+F 3 "" H 3900 2800 50  0001 C CNN
+	1    3900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616AEB8F
+P 3900 1050
+F 0 "#PWR?" H 3900 800 50  0001 C CNN
+F 1 "GND" H 3905 877 50  0000 C CNN
+F 2 "" H 3900 1050 50  0001 C CNN
+F 3 "" H 3900 1050 50  0001 C CNN
+	1    3900 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616CD4E7
+P 1025 1075
+F 0 "#PWR?" H 1025 825 50  0001 C CNN
+F 1 "GND" H 1030 902 50  0000 C CNN
+F 2 "" H 1025 1075 50  0001 C CNN
+F 3 "" H 1025 1075 50  0001 C CNN
+	1    1025 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616CE21C
+P 1325 975
+F 0 "R?" V 1118 975 50  0000 C CNN
+F 1 "220K" V 1209 975 50  0000 C CNN
+F 2 "" V 1255 975 50  0001 C CNN
+F 3 "~" H 1325 975 50  0001 C CNN
+	1    1325 975 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616CFE63
+P 1650 1125
+F 0 "R?" V 1443 1125 50  0000 C CNN
+F 1 "33K" H 1534 1125 50  0000 C CNN
+F 2 "" V 1580 1125 50  0001 C CNN
+F 3 "~" H 1650 1125 50  0001 C CNN
+	1    1650 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 616D0DD9
+P 1900 1125
+F 0 "D?" V 1854 1205 50  0000 L CNN
+F 1 "1N4148" V 1945 1205 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1900 950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1900 1125 50  0001 C CNN
+	1    1900 1125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616D3822
+P 1650 1275
+F 0 "#PWR?" H 1650 1025 50  0001 C CNN
+F 1 "GND" H 1655 1102 50  0000 C CNN
+F 2 "" H 1650 1275 50  0001 C CNN
+F 3 "" H 1650 1275 50  0001 C CNN
+	1    1650 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616D3E7B
+P 1900 1275
+F 0 "#PWR?" H 1900 1025 50  0001 C CNN
+F 1 "GND" H 1905 1102 50  0000 C CNN
+F 2 "" H 1900 1275 50  0001 C CNN
+F 3 "" H 1900 1275 50  0001 C CNN
+	1    1900 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616D4294
+P 2375 1175
+F 0 "#PWR?" H 2375 925 50  0001 C CNN
+F 1 "GND" H 2380 1002 50  0000 C CNN
+F 2 "" H 2375 1175 50  0001 C CNN
+F 3 "" H 2375 1175 50  0001 C CNN
+	1    2375 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1025 975  1175 975 
+Wire Wire Line
+	1475 975  1650 975 
+Wire Wire Line
+	1650 975  1900 975 
+Connection ~ 1650 975 
+Wire Wire Line
+	1900 975  2075 975 
+Connection ~ 1900 975 
+$Comp
+L Device:R R?
+U 1 1 616D6903
+P 2375 575
+F 0 "R?" V 2168 575 50  0000 C CNN
+F 1 "68K" H 2259 575 50  0000 C CNN
+F 2 "" V 2305 575 50  0001 C CNN
+F 3 "~" H 2375 575 50  0001 C CNN
+	1    2375 575 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616D6909
+P 2375 425
+F 0 "#PWR?" H 2375 175 50  0001 C CNN
+F 1 "GND" H 2380 252 50  0000 C CNN
+F 2 "" H 2375 425 50  0001 C CNN
+F 3 "" H 2375 425 50  0001 C CNN
+	1    2375 425 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2375 725  2375 750 
+Wire Wire Line
+	2375 750  3100 750 
+Wire Wire Line
+	3100 750  3100 1350
+Wire Wire Line
+	3100 1350 3600 1350
+Connection ~ 2375 750 
+Wire Wire Line
+	2375 750  2375 775 
+Wire Wire Line
+	4200 1450 4200 1875
+Wire Wire Line
+	4200 1875 3425 1875
+Wire Wire Line
+	3425 1875 3425 1250
+Wire Wire Line
+	3425 1250 3600 1250
+$Comp
+L Device:R R?
+U 1 1 616D91A1
+P 4600 1250
+F 0 "R?" V 4393 1250 50  0000 C CNN
+F 1 "47K" V 4484 1250 50  0000 C CNN
+F 2 "" V 4530 1250 50  0001 C CNN
+F 3 "~" H 4600 1250 50  0001 C CNN
+	1    4600 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 1250 4375 1250
+Wire Wire Line
+	4375 1250 4375 1950
+Wire Wire Line
+	4375 1950 3250 1950
+Wire Wire Line
+	3250 1950 3250 2500
+Wire Wire Line
+	3250 2500 3600 2500
+Connection ~ 4375 1250
+Wire Wire Line
+	4375 1250 4200 1250
+Text Notes 575  675  0    50   ~ 0
+TODO: Diode protection for 2n3904
+$Comp
+L Diode:1N4148 D?
+U 1 1 616E1C4E
+P 4825 1575
+F 0 "D?" V 4779 1655 50  0000 L CNN
+F 1 "1N4148" V 4870 1655 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4825 1400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4825 1575 50  0001 C CNN
+	1    4825 1575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 616E35BB
+P 4825 2050
+F 0 "D?" V 4779 2130 50  0000 L CNN
+F 1 "1N4148" V 4870 2130 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4825 1875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4825 2050 50  0001 C CNN
+	1    4825 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616EBE09
+P 4600 2400
+F 0 "R?" V 4393 2400 50  0000 C CNN
+F 1 "47K" V 4484 2400 50  0000 C CNN
+F 2 "" V 4530 2400 50  0001 C CNN
+F 3 "~" H 4600 2400 50  0001 C CNN
+	1    4600 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 2400 4450 2400
+Wire Wire Line
+	4750 2400 4825 2400
+Wire Wire Line
+	4825 2200 4825 2400
+Wire Wire Line
+	4825 1900 4825 1800
+Wire Wire Line
+	4825 1425 4825 1250
+Wire Wire Line
+	4825 1250 4750 1250
+$Comp
+L Device:R R?
+U 1 1 616EECD1
+P 5425 900
+F 0 "R?" V 5218 900 50  0000 C CNN
+F 1 "150K" V 5309 900 50  0000 C CNN
+F 2 "" V 5355 900 50  0001 C CNN
+F 3 "~" H 5425 900 50  0001 C CNN
+	1    5425 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616F7CCF
+P 6100 575
+F 0 "R?" V 5893 575 50  0000 C CNN
+F 1 "220K" V 5984 575 50  0000 C CNN
+F 2 "" V 6030 575 50  0001 C CNN
+F 3 "~" H 6100 575 50  0001 C CNN
+	1    6100 575 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616F8B09
+P 5425 1225
+F 0 "R?" V 5218 1225 50  0000 C CNN
+F 1 "300K" V 5309 1225 50  0000 C CNN
+F 2 "" V 5355 1225 50  0001 C CNN
+F 3 "~" H 5425 1225 50  0001 C CNN
+	1    5425 1225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616F9852
+P 5425 1700
+F 0 "R?" V 5218 1700 50  0000 C CNN
+F 1 "150K" V 5309 1700 50  0000 C CNN
+F 2 "" V 5355 1700 50  0001 C CNN
+F 3 "~" H 5425 1700 50  0001 C CNN
+	1    5425 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616FA44B
+P 5425 2025
+F 0 "R?" V 5218 2025 50  0000 C CNN
+F 1 "300K" V 5309 2025 50  0000 C CNN
+F 2 "" V 5355 2025 50  0001 C CNN
+F 3 "~" H 5425 2025 50  0001 C CNN
+	1    5425 2025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616FF969
+P 5425 2800
+F 0 "R?" V 5218 2800 50  0000 C CNN
+F 1 "300K" V 5309 2800 50  0000 C CNN
+F 2 "" V 5355 2800 50  0001 C CNN
+F 3 "~" H 5425 2800 50  0001 C CNN
+	1    5425 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61700DC3
+P 5425 3200
+F 0 "R?" V 5218 3200 50  0000 C CNN
+F 1 "100K" V 5309 3200 50  0000 C CNN
+F 2 "" V 5355 3200 50  0001 C CNN
+F 3 "~" H 5425 3200 50  0001 C CNN
+	1    5425 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61700DC9
+P 5425 3525
+F 0 "R?" V 5218 3525 50  0000 C CNN
+F 1 "100K" V 5309 3525 50  0000 C CNN
+F 2 "" V 5355 3525 50  0001 C CNN
+F 3 "~" H 5425 3525 50  0001 C CNN
+	1    5425 3525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61701AE9
+P 5425 3875
+F 0 "R?" V 5218 3875 50  0000 C CNN
+F 1 "150K" V 5309 3875 50  0000 C CNN
+F 2 "" V 5355 3875 50  0001 C CNN
+F 3 "~" H 5425 3875 50  0001 C CNN
+	1    5425 3875
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616FF963
+P 5425 2500
+F 0 "R?" V 5218 2500 50  0000 C CNN
+F 1 "150K" V 5309 2500 50  0000 C CNN
+F 2 "" V 5355 2500 50  0001 C CNN
+F 3 "~" H 5425 2500 50  0001 C CNN
+	1    5425 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4825 1250 4825 900 
+Wire Wire Line
+	4825 900  5275 900 
+Connection ~ 4825 1250
+Wire Wire Line
+	5275 1700 5050 1700
+Wire Wire Line
+	5050 1700 5050 1800
+Wire Wire Line
+	5050 1800 4825 1800
+Connection ~ 4825 1800
+Wire Wire Line
+	4825 1800 4825 1725
+Wire Wire Line
+	4825 2400 4825 2500
+Wire Wire Line
+	4825 2500 5275 2500
+Connection ~ 4825 2400
+Wire Wire Line
+	5575 1225 5700 1225
+Wire Wire Line
+	5700 1225 5700 1000
+Wire Wire Line
+	5700 1000 5875 1000
+Wire Wire Line
+	5575 2025 5700 2025
+Wire Wire Line
+	5700 2025 5700 1825
+Wire Wire Line
+	5700 1825 5875 1825
+Wire Wire Line
+	5575 2800 5725 2800
+Wire Wire Line
+	5725 2800 5725 2525
+Wire Wire Line
+	5725 2525 5875 2525
+Wire Wire Line
+	5575 3875 5725 3875
+Wire Wire Line
+	5725 3875 5725 3675
+Wire Wire Line
+	5725 3675 5875 3675
+$Comp
+L Device:R R?
+U 1 1 6172DB2B
+P 6725 1100
+F 0 "R?" V 6518 1100 50  0000 C CNN
+F 1 "330R" V 6609 1100 50  0000 C CNN
+F 2 "" V 6655 1100 50  0001 C CNN
+F 3 "~" H 6725 1100 50  0001 C CNN
+	1    6725 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6172E960
+P 6700 1925
+F 0 "R?" V 6493 1925 50  0000 C CNN
+F 1 "330R" V 6584 1925 50  0000 C CNN
+F 2 "" V 6630 1925 50  0001 C CNN
+F 3 "~" H 6700 1925 50  0001 C CNN
+	1    6700 1925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6172F4B6
+P 6700 2625
+F 0 "R?" V 6493 2625 50  0000 C CNN
+F 1 "330R" V 6584 2625 50  0000 C CNN
+F 2 "" V 6630 2625 50  0001 C CNN
+F 3 "~" H 6700 2625 50  0001 C CNN
+	1    6700 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61730186
+P 6700 3775
+F 0 "R?" V 6493 3775 50  0000 C CNN
+F 1 "330R" V 6584 3775 50  0000 C CNN
+F 2 "" V 6630 3775 50  0001 C CNN
+F 3 "~" H 6700 3775 50  0001 C CNN
+	1    6700 3775
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
