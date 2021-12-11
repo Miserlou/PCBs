@@ -1,0 +1,754 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT RV1
+U 1 1 619BB1CD
+P 2725 1050
+F 0 "RV1" H 2655 1004 50  0000 R CNN
+F 1 "1M ATK" H 2655 1095 50  0000 R CNN
+F 2 "ao_tht:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles_centered" H 2725 1050 50  0001 C CNN
+F 3 "~" H 2725 1050 50  0001 C CNN
+	1    2725 1050
+	0    -1   1    0   
+$EndComp
+Text Notes 7450 6950 0    50   ~ 0
+ENVY\nschematic by Bumm Bumm Garage\nhttps://www.reddit.com/r/synthdiy/comments/rd2off/simple_envelope_follower_circuit_rev_2/
+$Comp
+L ao_tht:2_pin_Molex_connector J1
+U 1 1 61A17CA0
+P 700 1150
+F 0 "J1" H 618 1367 50  0000 C CNN
+F 1 "CV" H 618 1276 50  0000 C CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 700 1150 50  0001 C CNN
+F 3 "" H 700 1150 50  0001 C CNN
+F 4 "Tayda" H 700 1150 50  0001 C CNN "Vendor"
+F 5 "A-826" H 700 1150 50  0001 C CNN "SKU"
+	1    700  1150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 61A21A8C
+P 900 1250
+F 0 "#PWR0114" H 900 1000 50  0001 C CNN
+F 1 "GND" H 905 1077 50  0000 C CNN
+F 2 "" H 900 1250 50  0001 C CNN
+F 3 "" H 900 1250 50  0001 C CNN
+	1    900  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:MountingHole H1
+U 1 1 61A27D14
+P 950 6750
+F 0 "H1" H 1050 6796 50  0000 L CNN
+F 1 "MountingHole" H 1050 6705 50  0000 L CNN
+F 2 "ao_tht:MountingHole_3.2mm_M3" H 950 6750 50  0001 C CNN
+F 3 "" H 950 6750 50  0001 C CNN
+F 4 "DNF" H 950 6750 50  0001 C CNN "Config"
+	1    950  6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:2_pin_Molex_connector J2
+U 1 1 61A2C87A
+P 3400 3975
+F 0 "J2" H 3480 3967 50  0000 L CNN
+F 1 "OUT" H 3480 3876 50  0000 L CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 3400 3975 50  0001 C CNN
+F 3 "" H 3400 3975 50  0001 C CNN
+F 4 "Tayda" H 3400 3975 50  0001 C CNN "Vendor"
+F 5 "A-826" H 3400 3975 50  0001 C CNN "SKU"
+	1    3400 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 61A2C880
+P 3200 4175
+F 0 "#PWR0115" H 3200 3925 50  0001 C CNN
+F 1 "GND" H 3205 4002 50  0000 C CNN
+F 2 "" H 3200 4175 50  0001 C CNN
+F 3 "" H 3200 4175 50  0001 C CNN
+	1    3200 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3975 2950 3975
+Wire Wire Line
+	3200 4075 3200 4175
+$Comp
+L ao_tht:Synth_power_2x5 J5
+U 1 1 61A4FA78
+P 6200 1600
+F 0 "J5" H 6200 2047 60  0000 C CNN
+F 1 "Synth_power_2x5" H 6200 1941 60  0000 C CNN
+F 2 "ao_tht:Power_Header" H 6200 1600 60  0001 C CNN
+F 3 "" H 6200 1600 60  0001 C CNN
+F 4 "Tayda" H 6200 1600 50  0001 C CNN "Vendor"
+F 5 "A-2939" H 6200 1600 50  0001 C CNN "SKU"
+	1    6200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:1N4148 D3
+U 1 1 61A5C6D1
+P 7000 1400
+F 0 "D3" V 7046 1320 50  0000 R CNN
+F 1 "1N4148" V 6955 1320 50  0000 R CNN
+F 2 "ao_tht:D_DO-35_SOD27_P7.62mm_Horizontal" H 7000 1225 50  0001 C CNN
+F 3 "" H 7000 1400 50  0001 C CNN
+F 4 "Tayda" H 7000 1400 50  0001 C CNN "Vendor"
+F 5 "A-157" H 7000 1400 50  0001 C CNN "SKU"
+	1    7000 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L ao_tht:1N4148 D4
+U 1 1 61A5C6D9
+P 7000 1800
+F 0 "D4" V 7046 1720 50  0000 R CNN
+F 1 "1N4148" V 6955 1720 50  0000 R CNN
+F 2 "ao_tht:D_DO-35_SOD27_P7.62mm_Horizontal" H 7000 1625 50  0001 C CNN
+F 3 "" H 7000 1800 50  0001 C CNN
+F 4 "Tayda" H 7000 1800 50  0001 C CNN "Vendor"
+F 5 "A-157" H 7000 1800 50  0001 C CNN "SKU"
+	1    7000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 61A64824
+P 7500 1250
+F 0 "C1" H 7618 1296 50  0000 L CNN
+F 1 "10uf" H 7618 1205 50  0000 L CNN
+F 2 "ao_tht:CP_Radial_D5.0mm_P2.00mm" H 7538 1100 50  0001 C CNN
+F 3 "~" H 7500 1250 50  0001 C CNN
+	1    7500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 61A66E77
+P 7500 1950
+F 0 "C2" H 7618 1996 50  0000 L CNN
+F 1 "10uf" H 7618 1905 50  0000 L CNN
+F 2 "ao_tht:CP_Radial_D5.0mm_P2.00mm" H 7538 1800 50  0001 C CNN
+F 3 "~" H 7500 1950 50  0001 C CNN
+	1    7500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1100 7300 1100
+Wire Wire Line
+	7300 1100 7300 1400
+Wire Wire Line
+	7300 1400 7150 1400
+Wire Wire Line
+	7500 2100 7300 2100
+Wire Wire Line
+	7300 2100 7300 1800
+Wire Wire Line
+	7300 1800 7150 1800
+Wire Wire Line
+	6850 1800 6700 1800
+Wire Wire Line
+	6850 1400 6700 1400
+Wire Wire Line
+	5750 1400 5750 1000
+Wire Wire Line
+	6700 1000 6700 1400
+Connection ~ 6700 1400
+Wire Wire Line
+	6700 1400 6650 1400
+Wire Wire Line
+	6700 1800 6700 1950
+Wire Wire Line
+	6700 1950 5750 1950
+Wire Wire Line
+	5750 1950 5750 1800
+Connection ~ 6700 1800
+Wire Wire Line
+	6700 1800 6650 1800
+Wire Wire Line
+	5750 1500 5750 1600
+Connection ~ 5750 1600
+Wire Wire Line
+	5750 1600 5750 1700
+Wire Wire Line
+	5750 1600 6650 1600
+Wire Wire Line
+	6650 1500 6650 1600
+Connection ~ 6650 1600
+Wire Wire Line
+	6650 1600 6650 1700
+Wire Wire Line
+	6650 1600 7500 1600
+Wire Wire Line
+	7500 1600 7500 1400
+Wire Wire Line
+	7500 1600 7500 1800
+Connection ~ 7500 1600
+$Comp
+L ao_tht:C C3
+U 1 1 61A88FF4
+P 7950 1250
+F 0 "C3" H 8065 1296 50  0000 L CNN
+F 1 ".1uf (104)" H 8065 1205 50  0000 L CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7988 1100 50  0001 C CNN
+F 3 "" H 7950 1250 50  0001 C CNN
+F 4 "Tayda" H 7950 1250 50  0001 C CNN "Vendor"
+	1    7950 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:C C4
+U 1 1 61A90F13
+P 7950 1950
+F 0 "C4" H 8065 1996 50  0000 L CNN
+F 1 ".1uf (104)" H 8065 1905 50  0000 L CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 7988 1800 50  0001 C CNN
+F 3 "" H 7950 1950 50  0001 C CNN
+F 4 "Tayda" H 7950 1950 50  0001 C CNN "Vendor"
+	1    7950 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2100 7950 2100
+Connection ~ 7500 2100
+Connection ~ 7950 2100
+Connection ~ 7500 1100
+Connection ~ 7950 1100
+Wire Wire Line
+	7950 1100 7500 1100
+Wire Wire Line
+	7500 1600 7750 1600
+Wire Wire Line
+	7950 1600 7950 1400
+Wire Wire Line
+	7950 1600 7950 1800
+Connection ~ 7950 1600
+Wire Wire Line
+	9400 2100 9400 1850
+$Comp
+L power:GND #PWR0108
+U 1 1 61C26722
+P 7750 1600
+F 0 "#PWR0108" H 7750 1350 50  0001 C CNN
+F 1 "GND" H 7755 1427 50  0000 C CNN
+F 2 "" H 7750 1600 50  0001 C CNN
+F 3 "" H 7750 1600 50  0001 C CNN
+	1    7750 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7750 1600
+Wire Wire Line
+	7750 1600 7950 1600
+Wire Wire Line
+	9400 1250 9400 1100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61C5118A
+P 8700 1100
+F 0 "#FLG0101" H 8700 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 8700 1273 50  0000 C CNN
+F 2 "" H 8700 1100 50  0001 C CNN
+F 3 "~" H 8700 1100 50  0001 C CNN
+	1    8700 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 8700 1100
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61C629EA
+P 9400 1850
+F 0 "#FLG0102" H 9400 1925 50  0001 C CNN
+F 1 "PWR_FLAG" V 9400 1978 50  0000 L CNN
+F 2 "" H 9400 1850 50  0001 C CNN
+F 3 "~" H 9400 1850 50  0001 C CNN
+	1    9400 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L ao_tht:R R1
+U 1 1 61F8A620
+P 1475 1300
+F 0 "R1" H 1545 1346 50  0000 L CNN
+F 1 "100k" H 1545 1255 50  0000 L CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1405 1300 50  0001 C CNN
+F 3 "" H 1475 1300 50  0001 C CNN
+F 4 "Tayda" H 1475 1300 50  0001 C CNN "Vendor"
+	1    1475 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:C C5
+U 1 1 61F8D86F
+P 1150 1150
+F 0 "C5" V 898 1150 50  0000 C CNN
+F 1 "100nf" V 989 1150 50  0000 C CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 1188 1000 50  0001 C CNN
+F 3 "" H 1150 1150 50  0001 C CNN
+F 4 "Tayda" H 1150 1150 50  0001 C CNN "Vendor"
+	1    1150 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 1 1 61F8F310
+P 2025 1050
+F 0 "U1" H 2025 683 50  0000 C CNN
+F 1 "TL074" H 2025 774 50  0000 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 1975 1150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2075 1250 50  0001 C CNN
+	1    2025 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L ao_tht:1N4148 D2
+U 1 1 61F97015
+P 3225 1050
+F 0 "D2" H 3225 833 50  0000 C CNN
+F 1 "1N4148" H 3225 924 50  0000 C CNN
+F 2 "ao_tht:D_DO-35_SOD27_P7.62mm_Horizontal" H 3225 875 50  0001 C CNN
+F 3 "" H 3225 1050 50  0001 C CNN
+F 4 "Tayda" H 3225 1050 50  0001 C CNN "Vendor"
+F 5 "A-157" H 3225 1050 50  0001 C CNN "SKU"
+	1    3225 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 61F98246
+P 3750 1300
+F 0 "RV2" H 3680 1254 50  0000 R CNN
+F 1 "1M REL" H 3680 1345 50  0000 R CNN
+F 2 "ao_tht:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles_centered" H 3750 1300 50  0001 C CNN
+F 3 "~" H 3750 1300 50  0001 C CNN
+	1    3750 1300
+	0    -1   1    0   
+$EndComp
+$Comp
+L ao_tht:C C6
+U 1 1 61F99C4E
+P 4075 1450
+F 0 "C6" H 4190 1496 50  0000 L CNN
+F 1 "100nf" H 4190 1405 50  0000 L CNN
+F 2 "ao_tht:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4113 1300 50  0001 C CNN
+F 3 "" H 4075 1450 50  0001 C CNN
+F 4 "Tayda" H 4075 1450 50  0001 C CNN "Vendor"
+	1    4075 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:R R7
+U 1 1 61F9AEE1
+P 4450 1050
+F 0 "R7" V 4657 1050 50  0000 C CNN
+F 1 "1M" V 4566 1050 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4380 1050 50  0001 C CNN
+F 3 "" H 4450 1050 50  0001 C CNN
+F 4 "Tayda" H 4450 1050 50  0001 C CNN "Vendor"
+	1    4450 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ao_tht:R R9
+U 1 1 61F9C769
+P 5075 650
+F 0 "R9" V 5282 650 50  0000 C CNN
+F 1 "1M" V 5191 650 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5005 650 50  0001 C CNN
+F 3 "" H 5075 650 50  0001 C CNN
+F 4 "Tayda" H 5075 650 50  0001 C CNN "Vendor"
+	1    5075 650 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 1000 6700 1000
+$Comp
+L Amplifier_Operational:TL074 U1
+U 2 1 61FA34FD
+P 5050 1125
+F 0 "U1" H 5050 758 50  0000 C CNN
+F 1 "TL074" H 5050 849 50  0000 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 5000 1225 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5100 1325 50  0001 C CNN
+	2    5050 1125
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 3 1 61FA66F2
+P 2075 3150
+F 0 "U1" H 2075 2783 50  0000 C CNN
+F 1 "TL074" H 2075 2874 50  0000 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 2025 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2125 3350 50  0001 C CNN
+	3    2075 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL074 U1
+U 4 1 61FABD6E
+P 4100 3175
+F 0 "U1" H 4100 2808 50  0000 C CNN
+F 1 "TL074" H 4100 2899 50  0000 C CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 4050 3275 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4150 3375 50  0001 C CNN
+	4    4100 3175
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV3
+U 1 1 61FB069F
+P 1075 3075
+F 0 "RV3" H 1005 3029 50  0000 R CNN
+F 1 "1M AMP" H 1005 3120 50  0000 R CNN
+F 2 "ao_tht:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles_centered" H 1075 3075 50  0001 C CNN
+F 3 "~" H 1075 3075 50  0001 C CNN
+	1    1075 3075
+	0    1    -1   0   
+$EndComp
+$Comp
+L ao_tht:R R2
+U 1 1 61FB1D36
+P 1975 2500
+F 0 "R2" V 2182 2500 50  0000 C CNN
+F 1 "1M" V 2091 2500 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1905 2500 50  0001 C CNN
+F 3 "" H 1975 2500 50  0001 C CNN
+F 4 "Tayda" H 1975 2500 50  0001 C CNN "Vendor"
+	1    1975 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ao_tht:R R4
+U 1 1 61FB3365
+P 2950 3675
+F 0 "R4" H 3020 3721 50  0000 L CNN
+F 1 "1K" H 3020 3630 50  0000 L CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 3675 50  0001 C CNN
+F 3 "" H 2950 3675 50  0001 C CNN
+F 4 "Tayda" H 2950 3675 50  0001 C CNN "Vendor"
+	1    2950 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:R R3
+U 1 1 61FB41F0
+P 2925 2600
+F 0 "R3" H 2995 2646 50  0000 L CNN
+F 1 "1K" H 2995 2555 50  0000 L CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2855 2600 50  0001 C CNN
+F 3 "" H 2925 2600 50  0001 C CNN
+F 4 "Tayda" H 2925 2600 50  0001 C CNN "Vendor"
+	1    2925 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:R R5
+U 1 1 61FB5DDF
+P 3450 3100
+F 0 "R5" V 3657 3100 50  0000 C CNN
+F 1 "100K" V 3566 3100 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3380 3100 50  0001 C CNN
+F 3 "" H 3450 3100 50  0001 C CNN
+F 4 "Tayda" H 3450 3100 50  0001 C CNN "Vendor"
+	1    3450 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ao_tht:R R6
+U 1 1 61FB7308
+P 4325 2625
+F 0 "R6" V 4532 2625 50  0000 C CNN
+F 1 "100K" V 4441 2625 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4255 2625 50  0001 C CNN
+F 3 "" H 4325 2625 50  0001 C CNN
+F 4 "Tayda" H 4325 2625 50  0001 C CNN "Vendor"
+	1    4325 2625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ao_tht:R R8
+U 1 1 61FB8419
+P 4900 3150
+F 0 "R8" V 5107 3150 50  0000 C CNN
+F 1 "1K" V 5016 3150 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4830 3150 50  0001 C CNN
+F 3 "" H 4900 3150 50  0001 C CNN
+F 4 "Tayda" H 4900 3150 50  0001 C CNN "Vendor"
+	1    4900 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ao_tht:2_pin_Molex_connector J3
+U 1 1 61FBD66A
+P 5500 3150
+F 0 "J3" H 5580 3142 50  0000 L CNN
+F 1 "INVOUT" H 5580 3051 50  0000 L CNN
+F 2 "ao_tht:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 5500 3150 50  0001 C CNN
+F 3 "" H 5500 3150 50  0001 C CNN
+F 4 "Tayda" H 5500 3150 50  0001 C CNN "Vendor"
+F 5 "A-826" H 5500 3150 50  0001 C CNN "SKU"
+	1    5500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61FBD670
+P 5300 3350
+F 0 "#PWR0101" H 5300 3100 50  0001 C CNN
+F 1 "GND" H 5305 3177 50  0000 C CNN
+F 2 "" H 5300 3350 50  0001 C CNN
+F 3 "" H 5300 3350 50  0001 C CNN
+	1    5300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3150 5050 3150
+Wire Wire Line
+	5300 3250 5300 3350
+$Comp
+L Amplifier_Operational:TL074 U1
+U 5 1 61FC1649
+P 9300 1550
+F 0 "U1" H 9113 1504 50  0000 R CNN
+F 1 "TL074" H 9113 1595 50  0000 R CNN
+F 2 "ao_tht:DIP-14_W7.62mm_Socket_LongPads" H 9250 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9350 1750 50  0001 C CNN
+	5    9300 1550
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9400 1850
+Wire Wire Line
+	7950 1100 8700 1100
+Wire Wire Line
+	7950 2100 9400 2100
+Wire Wire Line
+	8700 1100 9400 1100
+Wire Wire Line
+	1000 1150 900  1150
+Wire Wire Line
+	1300 1150 1475 1150
+Wire Wire Line
+	1725 1150 1475 1150
+Connection ~ 1475 1150
+Wire Wire Line
+	2325 1050 2425 1050
+Wire Wire Line
+	2425 1050 2425 575 
+Wire Wire Line
+	2425 575  1725 575 
+Wire Wire Line
+	1725 575  1725 950 
+Connection ~ 2425 1050
+Wire Wire Line
+	2425 1050 2575 1050
+Wire Wire Line
+	2875 1050 2975 1050
+Wire Wire Line
+	2725 1200 2725 1325
+Wire Wire Line
+	2725 1325 2975 1325
+Wire Wire Line
+	2975 1325 2975 1050
+Connection ~ 2975 1050
+Wire Wire Line
+	2975 1050 3075 1050
+Wire Wire Line
+	3375 1050 3600 1050
+Wire Wire Line
+	3600 1050 3600 1300
+Connection ~ 3600 1050
+Wire Wire Line
+	3600 1050 4300 1050
+Wire Wire Line
+	3750 1450 3600 1450
+Wire Wire Line
+	3600 1450 3600 1300
+Connection ~ 3600 1300
+Wire Wire Line
+	3900 1300 4075 1300
+Wire Wire Line
+	4600 1050 4675 1050
+Wire Wire Line
+	4750 1050 4750 1025
+Wire Wire Line
+	5350 1125 5350 2175
+Wire Wire Line
+	5350 2175 725  2175
+Wire Wire Line
+	725  2175 725  3075
+Wire Wire Line
+	725  3075 925  3075
+Wire Wire Line
+	1225 3075 1450 3075
+Wire Wire Line
+	1775 3075 1775 3050
+Wire Wire Line
+	1450 3075 1450 2925
+Wire Wire Line
+	1450 2925 1075 2925
+Connection ~ 1450 3075
+Wire Wire Line
+	1450 3075 1675 3075
+Wire Wire Line
+	2375 3150 2500 3150
+Wire Wire Line
+	3300 3150 3300 3100
+Wire Wire Line
+	2500 3150 2500 2500
+Wire Wire Line
+	2500 2500 2125 2500
+Connection ~ 2500 3150
+Wire Wire Line
+	2500 3150 2925 3150
+Wire Wire Line
+	1825 2500 1675 2500
+Wire Wire Line
+	1675 2500 1675 3075
+Connection ~ 1675 3075
+Wire Wire Line
+	1675 3075 1775 3075
+Wire Wire Line
+	3600 3100 3600 3075
+Wire Wire Line
+	3600 3075 3750 3075
+Wire Wire Line
+	2925 3150 2925 3525
+Wire Wire Line
+	2925 3525 2950 3525
+Connection ~ 2925 3150
+Wire Wire Line
+	2925 3150 3300 3150
+Wire Wire Line
+	2950 3825 2950 3975
+Wire Wire Line
+	4400 3175 4575 3175
+Wire Wire Line
+	4750 3175 4750 3150
+Wire Wire Line
+	4575 3175 4575 2625
+Wire Wire Line
+	4575 2625 4475 2625
+Connection ~ 4575 3175
+Wire Wire Line
+	4575 3175 4750 3175
+Wire Wire Line
+	4175 2625 3750 2625
+Wire Wire Line
+	3750 2625 3750 3075
+Connection ~ 3750 3075
+Wire Wire Line
+	3750 3075 3800 3075
+$Comp
+L power:GND #PWR0102
+U 1 1 620000E8
+P 1475 1450
+F 0 "#PWR0102" H 1475 1200 50  0001 C CNN
+F 1 "GND" H 1480 1277 50  0000 C CNN
+F 2 "" H 1475 1450 50  0001 C CNN
+F 3 "" H 1475 1450 50  0001 C CNN
+	1    1475 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 62002CE8
+P 4075 1600
+F 0 "#PWR0103" H 4075 1350 50  0001 C CNN
+F 1 "GND" H 4080 1427 50  0000 C CNN
+F 2 "" H 4075 1600 50  0001 C CNN
+F 3 "" H 4075 1600 50  0001 C CNN
+	1    4075 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6200585B
+P 4750 1225
+F 0 "#PWR0104" H 4750 975 50  0001 C CNN
+F 1 "GND" H 4755 1052 50  0000 C CNN
+F 2 "" H 4750 1225 50  0001 C CNN
+F 3 "" H 4750 1225 50  0001 C CNN
+	1    4750 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 62008681
+P 3800 3275
+F 0 "#PWR0105" H 3800 3025 50  0001 C CNN
+F 1 "GND" H 3805 3102 50  0000 C CNN
+F 2 "" H 3800 3275 50  0001 C CNN
+F 3 "" H 3800 3275 50  0001 C CNN
+	1    3800 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 6200B8BD
+P 2925 2375
+F 0 "#PWR0106" H 2925 2125 50  0001 C CNN
+F 1 "GND" H 2930 2202 50  0000 C CNN
+F 2 "" H 2925 2375 50  0001 C CNN
+F 3 "" H 2925 2375 50  0001 C CNN
+	1    2925 2375
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 62011A85
+P 1775 3250
+F 0 "#PWR0107" H 1775 3000 50  0001 C CNN
+F 1 "GND" H 1780 3077 50  0000 C CNN
+F 2 "" H 1775 3250 50  0001 C CNN
+F 3 "" H 1775 3250 50  0001 C CNN
+	1    1775 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 62014D84
+P 2925 2950
+F 0 "D1" V 2872 3030 50  0000 L CNN
+F 1 "LED" V 2963 3030 50  0000 L CNN
+F 2 "ao_tht:LED_D5.0mm" H 2925 2950 50  0001 C CNN
+F 3 "~" H 2925 2950 50  0001 C CNN
+	1    2925 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2925 2750 2925 2800
+Wire Wire Line
+	2925 3100 2925 3150
+Wire Wire Line
+	5350 1125 5350 650 
+Wire Wire Line
+	5350 650  5225 650 
+Connection ~ 5350 1125
+Wire Wire Line
+	4925 650  4675 650 
+Wire Wire Line
+	4675 650  4675 1050
+Connection ~ 4675 1050
+Wire Wire Line
+	4675 1050 4750 1050
+Wire Wire Line
+	2925 2450 2925 2375
+$EndSCHEMATC

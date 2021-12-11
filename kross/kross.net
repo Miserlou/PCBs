@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/rjones/Projects/PCBGolf/kross/kross.sch)
-    (date "2021 November 21, Sunday 18:29:20")
+    (date "2021 December 11, Saturday 14:19:05")
     (tool "Eeschema (5.1.12-1-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref R3)
       (value 100K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -25,7 +25,7 @@
       (tstamp 619B24F9))
     (comp (ref R4)
       (value 330K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -33,7 +33,7 @@
       (tstamp 619B386D))
     (comp (ref R9)
       (value 330K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -41,7 +41,7 @@
       (tstamp 619B47B5))
     (comp (ref R10)
       (value 100K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -49,7 +49,7 @@
       (tstamp 619B4C23))
     (comp (ref R13)
       (value 100K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -85,7 +85,7 @@
       (tstamp 619D2B7F))
     (comp (ref R1)
       (value 100K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -93,7 +93,7 @@
       (tstamp 619EC010))
     (comp (ref R2)
       (value 100K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -101,7 +101,7 @@
       (tstamp 619ED335))
     (comp (ref R17)
       (value 1K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -109,7 +109,7 @@
       (tstamp 619EDEB2))
     (comp (ref R6)
       (value 510R)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -117,7 +117,7 @@
       (tstamp 619EF60A))
     (comp (ref R7)
       (value 510R)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -125,7 +125,7 @@
       (tstamp 619EFFA1))
     (comp (ref R8)
       (value 510R)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -133,7 +133,7 @@
       (tstamp 619F120C))
     (comp (ref R5)
       (value 510R)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -141,7 +141,7 @@
       (tstamp 619F18B5))
     (comp (ref R11)
       (value 22K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -149,7 +149,7 @@
       (tstamp 619F24B4))
     (comp (ref R12)
       (value 22K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -157,7 +157,7 @@
       (tstamp 619F2E58))
     (comp (ref R14)
       (value 100K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -165,7 +165,7 @@
       (tstamp 619F3691))
     (comp (ref R15)
       (value 15K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
@@ -173,7 +173,7 @@
       (tstamp 619F3CD4))
     (comp (ref R16)
       (value 3.3K)
-      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
+      (footprint ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal)
       (fields
         (field (name Vendor) Tayda))
       (libsource (lib ao_tht) (part R) (description Resistor))
