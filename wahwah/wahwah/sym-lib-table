@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name wahwah-rescue)(type Legacy)(uri ${KIPRJMOD}/wahwah-rescue.lib)(options "")(descr ""))
+)

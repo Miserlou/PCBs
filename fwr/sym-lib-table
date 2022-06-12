@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name fwr-rescue)(type Legacy)(uri ${KIPRJMOD}/fwr-rescue.lib)(options "")(descr ""))
+  (lib (name fwr2.sch-rescue)(type Legacy)(uri ${KIPRJMOD}/fwr2.sch-rescue.lib)(options "")(descr ""))
+  (lib (name fwr.2sch-rescue)(type Legacy)(uri ${KIPRJMOD}/fwr.2sch-rescue.lib)(options "")(descr ""))
+)

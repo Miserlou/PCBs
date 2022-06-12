@@ -58,7 +58,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3700 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2_pin_molex_connector:2_pin_Molex_connector J2
+L fwr.2sch-rescue:2_pin_Molex_connector-2_pin_molex_connector J2
 U 1 1 60E3FD0B
 P 2650 2225
 F 0 "J2" H 2568 2442 50  0000 C CNN
@@ -69,7 +69,7 @@ F 3 "" H 2650 2225 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 2_pin_molex_connector:2_pin_Molex_connector J1
+L fwr.2sch-rescue:2_pin_Molex_connector-2_pin_molex_connector J1
 U 1 1 60E42009
 P 2150 3700
 F 0 "J1" H 2068 3917 50  0000 C CNN
@@ -135,7 +135,7 @@ F 3 "" H 2850 2325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2_pin_molex_connector:2_pin_Molex_connector J4
+L fwr.2sch-rescue:2_pin_Molex_connector-2_pin_molex_connector J4
 U 1 1 60E4264B
 P 8975 3575
 F 0 "J4" H 9055 3567 50  0000 L CNN
@@ -542,7 +542,7 @@ Wire Wire Line
 	6700 3050 6700 3300
 Connection ~ 6700 3300
 $Comp
-L Device:R_Potentiometer Bias1
+L fwr.2sch-rescue:R_Potentiometer-Device Bias1
 U 1 1 60E94F16
 P 2675 2900
 F 0 "Bias1" H 2606 2854 50  0000 R CNN
@@ -566,7 +566,7 @@ F 3 "" H 2675 3050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Potentiometer CV_Amount1
+L fwr.2sch-rescue:R_Potentiometer-Device CV_Amount1
 U 1 1 60EA23B3
 P 2900 4075
 F 0 "CV_Amount1" H 2831 4029 50  0000 R CNN
@@ -594,7 +594,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 3700 2350 3700
 $Comp
-L Device:R_Potentiometer Feedback1
+L fwr.2sch-rescue:R_Potentiometer-Device Feedback1
 U 1 1 60EB2357
 P 2400 1600
 F 0 "Feedback1" H 2330 1554 50  0000 R CNN
@@ -632,7 +632,7 @@ Wire Wire Line
 	8550 3425 8550 3575
 Connection ~ 8550 3575
 $Comp
-L synth_power_2x5:Synth_power_2x5 J3
+L fwr.2sch-rescue:Synth_power_2x5-synth_power_2x5 J3
 U 1 1 60ECEDE7
 P 5425 5450
 F 0 "J3" H 5425 5897 60  0000 C CNN
@@ -675,7 +675,7 @@ F 3 "" H 4700 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:FerriteBead FB2
+L fwr.2sch-rescue:FerriteBead-Device FB2
 U 1 1 60EF236A
 P 6300 5125
 F 0 "FB2" V 6026 5125 50  0000 C CNN
@@ -686,7 +686,7 @@ F 3 "~" H 6300 5125 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:FerriteBead FB1
+L fwr.2sch-rescue:FerriteBead-Device FB1
 U 1 1 60EF8676
 P 6275 6000
 F 0 "FB1" V 6001 6000 50  0000 C CNN
@@ -705,7 +705,7 @@ Wire Wire Line
 Wire Wire Line
 	5875 6000 6125 6000
 $Comp
-L Device:C_Polarized C6
+L fwr.2sch-rescue:C_Polarized-Device C6
 U 1 1 60F04170
 P 6650 5850
 F 0 "C6" H 6768 5896 50  0000 L CNN
@@ -716,7 +716,7 @@ F 3 "~" H 6650 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Polarized C5
+L fwr.2sch-rescue:C_Polarized-Device C5
 U 1 1 60F05829
 P 6650 5175
 F 0 "C5" H 6768 5221 50  0000 L CNN
