@@ -1,0 +1,254 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ao_tht:2_pin_Molex_connector J?
+U 1 1 62B4908C
+P 1350 1875
+F 0 "J?" H 1268 2092 50  0000 C CNN
+F 1 "IN" H 1268 2001 50  0000 C CNN
+F 2 "" H 1350 1875 50  0001 C CNN
+F 3 "" H 1350 1875 50  0001 C CNN
+F 4 "Tayda" H 1350 1875 50  0001 C CNN "Vendor"
+F 5 "A-826" H 1350 1875 50  0001 C CNN "SKU"
+	1    1350 1875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ao_tht:R_POT RV?
+U 1 1 62B49DA1
+P 2075 2000
+F 0 "RV?" H 2006 2046 50  0000 R CNN
+F 1 "STAGE1 10K" H 2006 1955 50  0000 R CNN
+F 2 "" H 2075 2000 50  0001 C CNN
+F 3 "~" H 2075 2000 50  0001 C CNN
+F 4 "Tayda" H 2075 2000 50  0001 C CNN "Vendor"
+	1    2075 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:R_POT RV?
+U 1 1 62B4D3B6
+P 3250 1000
+F 0 "RV?" H 3180 954 50  0000 R CNN
+F 1 "STAGE2 10K" H 3180 1045 50  0000 R CNN
+F 2 "" H 3250 1000 50  0001 C CNN
+F 3 "~" H 3250 1000 50  0001 C CNN
+F 4 "Tayda" H 3250 1000 50  0001 C CNN "Vendor"
+	1    3250 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L ao_tht:R_POT RV?
+U 1 1 62B4E6A3
+P 3325 2850
+F 0 "RV?" H 3256 2896 50  0000 R CNN
+F 1 "STAGE3 10K" H 3256 2805 50  0000 R CNN
+F 2 "" H 3325 2850 50  0001 C CNN
+F 3 "~" H 3325 2850 50  0001 C CNN
+F 4 "Tayda" H 3325 2850 50  0001 C CNN "Vendor"
+	1    3325 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ao_tht:R R?
+U 1 1 62B4EA1C
+P 2700 1525
+F 0 "R?" V 2493 1525 50  0000 C CNN
+F 1 "10K - Maybe Skip" V 2584 1525 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2630 1525 50  0001 C CNN
+F 3 "" H 2700 1525 50  0001 C CNN
+F 4 "Tayda" H 2700 1525 50  0001 C CNN "Vendor"
+	1    2700 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L ao_tht:R R?
+U 1 1 62B4FAC6
+P 3550 1525
+F 0 "R?" V 3343 1525 50  0000 C CNN
+F 1 "10K" V 3434 1525 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3480 1525 50  0001 C CNN
+F 3 "" H 3550 1525 50  0001 C CNN
+F 4 "Tayda" H 3550 1525 50  0001 C CNN "Vendor"
+	1    3550 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L ao_tht:R R?
+U 1 1 62B50435
+P 3900 2850
+F 0 "R?" V 3693 2850 50  0000 C CNN
+F 1 "1K" V 3784 2850 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3830 2850 50  0001 C CNN
+F 3 "" H 3900 2850 50  0001 C CNN
+F 4 "Tayda" H 3900 2850 50  0001 C CNN "Vendor"
+	1    3900 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 62B50A33
+P 2800 2100
+F 0 "U?" H 2800 1733 50  0000 C CNN
+F 1 "TL072" H 2800 1824 50  0000 C CNN
+F 2 "" H 2800 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 62B59792
+P 4500 2750
+F 0 "U?" H 4500 2383 50  0000 C CNN
+F 1 "TL072" H 4500 2474 50  0000 C CNN
+F 2 "" H 4500 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4500 2750 50  0001 C CNN
+	1    4500 2750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2075 1850 1550 1850
+Wire Wire Line
+	1550 1850 1550 1875
+Wire Wire Line
+	2225 2000 2275 2000
+Wire Wire Line
+	2275 2000 2275 2200
+Wire Wire Line
+	2275 2200 2500 2200
+Wire Wire Line
+	2500 2000 2425 2000
+Wire Wire Line
+	2425 2000 2425 1525
+Wire Wire Line
+	2425 1525 2550 1525
+Wire Wire Line
+	2850 1525 2950 1525
+Wire Wire Line
+	2950 1525 2950 1000
+Wire Wire Line
+	2950 1000 3025 1000
+Wire Wire Line
+	3250 850  3250 700 
+Wire Wire Line
+	3250 700  3025 700 
+Wire Wire Line
+	3025 700  3025 1000
+Connection ~ 3025 1000
+Wire Wire Line
+	3025 1000 3100 1000
+Wire Wire Line
+	2950 1525 3400 1525
+Connection ~ 2950 1525
+Wire Wire Line
+	3700 1525 3700 2100
+Wire Wire Line
+	3700 2100 3325 2100
+Wire Wire Line
+	3325 2700 3325 2100
+Connection ~ 3325 2100
+Wire Wire Line
+	3325 2100 3100 2100
+Wire Wire Line
+	3475 2850 3750 2850
+Wire Wire Line
+	4050 2850 4200 2850
+Wire Wire Line
+	4800 2750 4925 2750
+Wire Wire Line
+	4925 2750 4925 2250
+Wire Wire Line
+	4925 2250 4200 2250
+Wire Wire Line
+	4200 2250 4200 2650
+$Comp
+L ao_tht:2_pin_Molex_connector J?
+U 1 1 62B5F5AD
+P 5850 2750
+F 0 "J?" H 5768 2425 50  0000 C CNN
+F 1 "OUT" H 5768 2516 50  0000 C CNN
+F 2 "" H 5850 2750 50  0001 C CNN
+F 3 "" H 5850 2750 50  0001 C CNN
+F 4 "Tayda" H 5850 2750 50  0001 C CNN "Vendor"
+F 5 "A-826" H 5850 2750 50  0001 C CNN "SKU"
+	1    5850 2750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62B6015D
+P 2075 2150
+F 0 "#PWR?" H 2075 1900 50  0001 C CNN
+F 1 "GND" H 2080 1977 50  0000 C CNN
+F 2 "" H 2075 2150 50  0001 C CNN
+F 3 "" H 2075 2150 50  0001 C CNN
+	1    2075 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62B608A5
+P 3250 1150
+F 0 "#PWR?" H 3250 900 50  0001 C CNN
+F 1 "GND" H 3255 977 50  0000 C CNN
+F 2 "" H 3250 1150 50  0001 C CNN
+F 3 "" H 3250 1150 50  0001 C CNN
+	1    3250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62B60EA9
+P 3325 3000
+F 0 "#PWR?" H 3325 2750 50  0001 C CNN
+F 1 "GND" H 3330 2827 50  0000 C CNN
+F 2 "" H 3325 3000 50  0001 C CNN
+F 3 "" H 3325 3000 50  0001 C CNN
+	1    3325 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62B61DD3
+P 5650 2650
+F 0 "#PWR?" H 5650 2400 50  0001 C CNN
+F 1 "GND" H 5655 2477 50  0000 C CNN
+F 2 "" H 5650 2650 50  0001 C CNN
+F 3 "" H 5650 2650 50  0001 C CNN
+	1    5650 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L ao_tht:R R?
+U 1 1 62B63B28
+P 5125 2750
+F 0 "R?" V 4918 2750 50  0000 C CNN
+F 1 "1K Skip?" V 5009 2750 50  0000 C CNN
+F 2 "ao_tht:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5055 2750 50  0001 C CNN
+F 3 "" H 5125 2750 50  0001 C CNN
+F 4 "Tayda" H 5125 2750 50  0001 C CNN "Vendor"
+	1    5125 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5275 2750 5650 2750
+Wire Wire Line
+	4975 2750 4925 2750
+Connection ~ 4925 2750
+Text Notes 4275 1425 0    50   ~ 0
+discussion\n\nhttps://lookmumnocomputer.discourse.group/t/verified-stripboard-layouts/81/481?u=blackdeath
+$EndSCHEMATC

@@ -1,4 +1,4 @@
-19647338782558464
+19667622099280464
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83755,6 +83755,13 @@ cross2
 0
 0
 ao_tht
+drv
+
+
+0
+0
+0
+ao_tht
 envy
 
 
@@ -83790,6 +83797,13 @@ envy5
 0
 0
 ao_tht
+fbk
+
+
+0
+0
+0
+ao_tht
 head
 
 
@@ -83811,7 +83825,21 @@ holy
 0
 0
 ao_tht
+hpf
+
+
+0
+0
+0
+ao_tht
 kross
+
+
+0
+0
+0
+ao_tht
+lpf
 
 
 0
@@ -83854,6 +83882,13 @@ mine6
 0
 ao_tht
 minus
+
+
+0
+0
+0
+ao_tht
+mix
 
 
 0
@@ -83930,6 +83965,41 @@ rat22
 0
 0
 ao_tht
+scream1
+
+
+0
+0
+0
+ao_tht
+scream2
+
+
+0
+0
+0
+ao_tht
+scream3
+
+
+0
+0
+0
+ao_tht
+scream4
+
+
+0
+0
+0
+ao_tht
+scream5
+
+
+0
+0
+0
+ao_tht
 sd2
 
 
@@ -83966,6 +84036,20 @@ slash_left
 0
 ao_tht
 slash_right
+
+
+0
+0
+0
+ao_tht
+spring
+
+
+0
+0
+0
+ao_tht
+spring2
 
 
 0
